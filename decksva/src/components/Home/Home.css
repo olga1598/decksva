@@ -1,5 +1,11 @@
 .home-content-first{
     background-image: url("/picture1.jpg");
+    min-height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .home-main-top{
@@ -72,4 +78,52 @@
 
 .home-content-forth p{
     margin-left: 20px;
+}
+
+.home-content-forth-addition-text, .home-content-forth-addition-button{
+    padding: 20px;
+    text-align: center;
+    letter-spacing: .05em;
+    line-height: 30px;
+}
+
+.home-content-fifth{
+    margin-top: 60px;
+    padding: 50px;
+    text-align: center;
+    letter-spacing: .05em;
+    line-height: 30px;
+    background-color: lightgray;
+}
+
+#rev{
+    width: 150px;
+    height: 150px;
+    font-size: 80px;
+    text-align: center;
+    line-height: 150px;
+    vertical-align: middle;
+}
+
+.home-content-sixth{
+    background-color: rgb(100, 159, 236);
+    padding-top: 50px;
+    text-align: center;
+    letter-spacing: .05em;
+    line-height: 30px;
+    color: white;
+}
+
+.why-choose-us-button{
+    background-color: #879c3a;
+    padding: 10px;
+    font-size: 1vw;
+    color: white;
+    margin: 5%;
+    letter-spacing: .15em;
+}
+
+.why-choose-us-button:hover{
+    /* background-color: #9eb44f; */
+    opacity: 0.8;
 }

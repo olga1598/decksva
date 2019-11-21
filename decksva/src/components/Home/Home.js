@@ -35,7 +35,7 @@ function Home() {
                     <div className="col-sm-2"></div>
                     <div className="col-sm-4">
                         <img className="img-sample" src="./new-deck.jpg" alt="new-deck" />
-                        <p>NEW DECK INSTALLATION</p>
+                        <p className="home-content-forth-job-description">NEW DECK INSTALLATION</p>
                     </div>
                     <div className="col-sm-4">
                         <img className="img-sample" src="./resurfacing.jpg" alt="resurfacing" />
@@ -45,19 +45,71 @@ function Home() {
 
                 </div>
                 <div className="row">
-                <div className="col-sm-2"></div>
-                <div className="col-sm-4">
-                    <img className="img-sample" src="./new-deck.jpg" alt="new-deck" />
-                    <p>GAZEBOS & PAVILIONS</p>
+                    <div className="col-sm-2"></div>
+                    <div className="col-sm-4">
+                        <img className="img-sample" src="./new-deck.jpg" alt="new-deck" />
+                        <p>GAZEBOS & PAVILIONS</p>
+                    </div>
+                    <div className="col-sm-4">
+                        <img className="img-sample" src="./resurfacing.jpg" alt="resurfacing" />
+                        <p>LOUVERED ROOFS</p>
+                    </div>
+                    <div className="col-sm-2"></div>
                 </div>
-                <div className="col-sm-4">
-                    <img className="img-sample" src="./resurfacing.jpg" alt="resurfacing" />
-                    <p>LOUVERED ROOFS</p>
+                <div className="row">
+                    <div className="col-sm-2"></div>
+                    <div className="col-sm-8">
+                        <div className="home-content-forth-addition-text">
+                            <p>In addition to deck building and deck resurfacing, we build gazebos, pavilions and Louvered Roofing Systems. We have partnered with industry front-runners like Trex and Struxure so we can offer you the best options for all your decking needs. All of this combined with our highly dedicated and experienced team means that we can guarantee top notch workmanship on each and every project, regardless of the size or value.</p>
+                        </div>
+                        <div className="home-content-forth-addition-button">
+                        <button className="btn btn-primary" type="button">GET YOUR FREE ESTIMATE TODAY</button>
+                        </div>
+                    </div>
+                    <div className="col-sm-2"></div>
                 </div>
-                <div className="col-sm-2"></div>
-
             </div>
-
+            <div className="home-content-fifth">
+                <div className="row">
+                    <div className="col-sm-2"></div>
+                    <div className="col-sm-8">
+                        <p>Our extensive client list and raving client reviews are a testament to our impeccable reputation. Who else would be better qualified to endorse our work than homeowners who have used our Deck and Resurfacing services.</p>
+                        <h3><strong>SEE WHAT OUR CLIENTS ARE SAYING!</strong></h3>
+                    </div>
+                    <div className="col-sm-2"></div>
+                </div>
+                <br />
+                <div className="row">
+                    <div className="col-sm-4"></div>
+                        <div className="col-sm-2">
+                            <a className="reviews houzz" href="https://www.houzz.com/professionals/decks-patios-and-outdoor-enclosures/virginia-deck-builders-pfvwus-pf~1706389953" target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-houzz" id="rev"></i>
+                            </a>
+                        </div>
+                        <div className="col-sm-2">
+                            <a className="reviews yelp" href="https://www.yelp.com/biz/virginia-deck-builders-alexandria-7?osq=virginia+deck+builders" target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-yelp" id="rev"></i>
+                            </a>                        
+                        </div>
+                    <div className="col-sm-4"></div>
+                </div>               
+            </div>
+            <div className="home-content-sixth">
+                <div className="row">
+                    <div className="col-sm-1"></div>
+                    <div className="col-sm-10">
+                        <h3><strong>WE GUARANTEE OUR CLIENT SATISFACTION</strong></h3>
+                        <h3>Registered & Insured • Our Products Come With Warranty • 5-Star Customer Reviews</h3>
+                    </div>
+                    <div className="col-sm-1"></div>
+                </div>
+                <div className="row">
+                    <div className="col-sm-2"></div>
+                    <div className="col-sm-8">
+                        <button className="why-choose-us-button" type="button">WHY YOU SHOULD CHOOSE US</button>
+                    </div>
+                    <div className="col-sm-2"></div>
+                </div>
             </div>
         </div>
     )

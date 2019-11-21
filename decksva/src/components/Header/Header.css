@@ -49,9 +49,9 @@
     font-size: 25px;
 }
 
-.social-links-shape-circle{
+/* .social-links-shape-circle{
     border-radius: 50%;
-}
+} */
 
 @media screen and (max-width: 900px) {
     .header-top-right {
