@@ -1,0 +1,74 @@
+.logo {
+    width: 50%;
+    margin-left: 50px;;
+}
+
+.header-phone-number, .social-links{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 150px;
+}
+
+.header-top-left{
+    font-size: 18px;
+}
+
+.header-top-right{
+    font-size: 20px;
+    text-align: end;
+}
+
+/* .header-phone{
+    letter-spacing: .05em;
+    padding: 12px 18px;
+    margin: .618em .5em;
+    background-color: #dce3e7;
+} */
+.header-phone-number{
+    color: #333;
+    letter-spacing: .05em;
+    padding: 12px 18px;
+    margin: .618em .5em;
+    background-color: #dce3e7;
+}
+
+.fa-facebook-f, .fa-houzz, .fa-yelp {
+    background-color: #879c3a;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+    /* padding: 10px; */
+}
+
+.social-links{
+    margin: .618em .5em;
+    font-size: 25px;
+}
+
+.social-links-shape-circle{
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 900px) {
+    .header-top-right {
+      display: none;
+    }  
+    /* .logo{
+        width: 100%;
+        display: flex;
+    } */
+}
+
+  @media screen and (max-width: 570) {
+    .header-top-right {
+      display: none;
+    }  
+    /* .logo{
+        width: 100%;
+    } */
+}
+

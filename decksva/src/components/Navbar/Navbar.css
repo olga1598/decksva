@@ -1,0 +1,32 @@
+/* #navbarToggler{
+    background-color: rgb(100, 159, 236);
+    font-weight: 100;
+} */
+
+.navbar ul{
+      text-align: center;
+      justify-content: center;
+      flex: 1;
+      font-weight: bold;
+      padding: 10px 0 10px 0;
+}
+
+.nav-item {
+    margin: 0 20px 0 20px;
+    /* font-family: futura-pt; */
+    /* font-style: normal; */
+    /* font-size: 19px; */
+    letter-spacing: .04em;
+    /* line-height: 1.5em; */
+}
+
+.navbar{
+    background-color: rgb(100, 159, 236);
+}
+@media screen and (max-width: 570) {
+    .navbar-toggler{
+        background-color: red;
+    
+    }
+}
+
