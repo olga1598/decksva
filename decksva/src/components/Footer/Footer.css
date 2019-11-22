@@ -1,0 +1,23 @@
+.footer-inner{
+    padding: 40px 45px;
+    background-color: lightgray;
+    font-size: 20px;
+}
+
+.footer-logo{
+    width: 50%;
+}
+
+.footer-estimate-button{
+    margin-top: 50px;
+}
+
+.nav-link-footer, .footer-sister-company-link{
+    color: #212529;
+    text-decoration-line: underline;
+}
+
+.nav-link-footer:hover, .footer-sister-company-link:hover{
+    color: #555e68;   
+}
+
