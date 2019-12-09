@@ -1,0 +1,146 @@
+.home-content-first{
+    background-image: url("/picture1.jpg");
+    min-height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-main-top{
+    padding: 50px;
+}
+
+.home-main-bottom{
+    padding: 50px;
+}
+
+.home-main-center{
+    /* setting alpha = 0.3 */
+    background-color: rgb(100, 159, 236, 0.7);
+    /* opacity: 0.8; */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    text-align: center;
+    padding-top: 50px;    
+    padding-bottom: 50px;    
+}
+
+.home-main-center h1 {
+    font-weight: bold;
+    color: white;
+    font-size: 4vw;
+}
+
+.estimate-button{
+    background-color: #879c3a;
+    padding: 10px;
+    font-size: 2vw;
+    color: white;
+    margin: 5%;
+}
+
+.home-content-second{
+    padding: 50px;
+    text-align: center;
+    letter-spacing: .05em;
+    line-height: 30px;
+}
+
+.home-content-second button{
+    letter-spacing: .1em;
+    padding: 10px 30px 10px 30px;
+    margin-top: 50px;
+}
+
+.home-content-third{
+    background-color: #879c3a;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.home-content-third h1{
+    font-size: 4vw;
+}
+
+.home-content-third h4{
+    font-size: 2vw;
+}
+
+
+.img-sample{
+    max-width: 100%;
+    margin: 20px;
+}
+
+.home-content-forth p{
+    margin-left: 20px;
+}
+
+.home-content-forth-addition-text, .home-content-forth-addition-button{
+    padding: 20px;
+    text-align: center;
+    letter-spacing: .05em;
+    line-height: 30px;
+}
+
+.home-content-fifth{
+    margin-top: 60px;
+    padding: 50px;
+    text-align: center;
+    letter-spacing: .05em;
+    line-height: 30px;
+    background-color: lightgray;
+}
+
+#rev{
+    width: 7rem;
+    height: 7rem;
+    font-size: 3.5rem;
+    text-align: center;
+    line-height: 7rem;
+    vertical-align: middle;
+}
+
+.home-content-sixth{
+    background-color: rgb(100, 159, 236);
+    padding-top: 50px;
+    text-align: center;
+    letter-spacing: .05em;
+    line-height: 30px;
+    color: white;
+}
+
+.why-choose-us-button{
+    background-color: #879c3a;
+    padding: 10px;
+    font-size: 1vw;
+    color: white;
+    margin: 5%;
+    letter-spacing: .15em;
+}
+
+.why-choose-us-button:hover{
+    /* background-color: #9eb44f; */
+    opacity: 0.8;
+}
+
+.home-content-fifth-reviews-button{
+    margin-top: 2rem;
+}
+
+.carousel-indicators li {
+    margin-top: 100px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: black;
+  }
+
+.carousel-item{
+    margin-bottom: 50px;
+    margin-top: 40px;
+}

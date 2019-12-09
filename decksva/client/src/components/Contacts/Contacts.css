@@ -1,0 +1,113 @@
+.contacts-content-first{
+    text-align: center;
+    margin: 70px 0px 70px 0px;
+    padding-left: 100px;
+    padding-right: 100px;
+    letter-spacing: .1em;
+}
+
+.contacts-content-first h4{
+    line-height: 35px;
+}
+
+.field{
+    width: 30%;
+    float: left;
+}
+
+.caption{
+    font-size: 12px;
+}
+
+.caption{
+    display: inline-block;
+    width: 98%;
+}
+
+.field-element{
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0px 4px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.title{
+    margin-top: 15px;
+}
+
+.column-content-first a{
+    color: #444;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.column-content-first, .column-content-second, .column-content-third, .column-content-third{
+    text-align: center;
+    font-size: 19px;
+    letter-spacing: 0.02em;
+    line-height: 1.5em;
+}
+
+.column-content-third h3{
+    color: rgb(14, 90, 14);
+}
+
+label {
+    margin-right: 10px;
+}
+
+.form-item.checkbox.required{
+    margin-top: 20px;
+}
+
+.field.address1, .field.address2{
+    width: 98%;
+}
+
+.description{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.option label{
+    cursor: pointer;
+    font-size: 15px; 
+}
+
+.option input{
+    margin-right: 5px;
+}
+
+.form-button-wrapper{
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+#form-submit-botton{
+    padding: 20px 40px 20px 40px;
+    letter-spacing: 0.1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+.company{
+    margin: 0px 50px 0px 50px;
+    letter-spacing: .05em;
+    line-height: 30px;
+}
+
+h4{
+    color: rgb(82, 82, 219);
+}
+
+.company-content-first{
+    text-align: center;
+    margin: 70px 0px 40px 0px;
+}
+
+.col-4-image, .col-6-image{
+    width: 100%;
+}
+
+.company-content-second-col6-text h4{
+    margin: 30px 0px 30px 0px;
+}
+
+.company-content-second-col4{
+    margin-left: 50px;
+}
+
+.company-content-third{
+    margin: 40px 0px 100px 0px;
+}
+
+.company-content-third h4{
+    text-align: center;
+}
