@@ -21,7 +21,14 @@
     margin-bottom: 30px; 
 }
 
-.carousel-control-prev-icon{
-    color: red;
+.carousel-controls span{
+    background-color: black;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
 }
+
+/* .carousel-inner{
+    background-color: yellow;
+} */
 

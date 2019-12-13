@@ -54,8 +54,8 @@ function Footer() {
                         <br />
                         <a className="footer-sister-company-link" href="https://www.deckguardian.com/" alt="sister-company" target="_blank" rel="noopener noreferrer">Deck Guardian</a>
                     </p>
-                    <p>
-                        Web Design by Olga Repnitsyna
+                    <p className="web-design-by">
+                        Web Design by <a href="mailto:olga.repnitsyna@gmail.com">Olga Repnitsyna</a>
                     </p>
                 </div>
             </div>

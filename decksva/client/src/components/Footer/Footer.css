@@ -17,7 +17,16 @@
     text-decoration-line: underline;
 }
 
-.nav-link-footer:hover, .footer-sister-company-link:hover{
+.nav-link-footer:hover, .footer-sister-company-link:hover, .web-design-by a:hover{
     color: #555e68;   
 }
 
+.web-design-by a{
+    color: #212529;
+}
+
+@media screen and (max-width: 600px) {
+    .footer-inner{
+        text-align: center;
+    }
+}

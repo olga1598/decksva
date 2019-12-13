@@ -8,16 +8,16 @@ const WhyUs = () => {
             <div className="why-us-content-first">
                 <div className="row">
                     <div className="col-sm-3">
-                        <img src="./new-deck.jpg" alt="why-choose-us-image-1" className="why-us-image" />
+                        <img src="./new-deck.jpg" alt="why-choose-us-1" className="why-us-image" />
                     </div>
                     <div className="col-sm-3">
-                        <img src="./resurfacing.jpg" alt="why-choose-us-image-2" className="why-us-image" />
+                        <img src="./resurfacing.jpg" alt="why-choose-us-2" className="why-us-image" />
                     </div>
                     <div className="col-sm-3">
-                        <img src="./picture1.jpg" alt="why-choose-us-image-3" className="why-us-image" />
+                        <img src="./picture1.jpg" alt="why-choose-us-3" className="why-us-image" />
                     </div>
                     <div className="col-sm-3">
-                        <img src="./picture1.jpg" alt="why-choose-us-image-4" className="why-us-image" />
+                        <img src="./picture1.jpg" alt="why-choose-us-4" className="why-us-image" />
                     </div>
                 </div>
             </div>
