@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
 import "./Header.css";
 
 
@@ -9,9 +10,9 @@ function Header() {
         <div className="col-sm-6">
 
             <div className="header-top-left">
-                <a className="header-logo" href="/">    
+            <NavLink to="/">
                     <img src="/logo1.jpg" alt="logo" className="logo" />
-                </a>           
+                </NavLink>   
             </div>
         </div>
         

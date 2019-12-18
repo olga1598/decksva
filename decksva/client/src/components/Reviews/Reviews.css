@@ -32,3 +32,17 @@
     background-color: yellow;
 } */
 
+@media only screen and (max-width: 600px) {
+    .reviews-content-first h1{
+        font-size: 1.8rem;
+    }
+    .reviews{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    #carouselExampleControls ol{
+        display: none;
+    }
+}
+
+

@@ -24,14 +24,14 @@
     margin-right: auto;
     max-width: 50%;
     text-align: center;
-    padding-top: 50px;    
-    padding-bottom: 50px;    
+    padding-top: 1rem;    
+    padding-bottom: 1rem;    
 }
 
 .home-main-center h1 {
     font-weight: bold;
     color: white;
-    font-size: 4vw;
+    font-size: 3vw;
 }
 
 .estimate-button{
@@ -145,13 +145,21 @@
     margin-top: 40px;
 }
 
-@media screen and (max-width: 600px) {
-    /* #rev{
-        width: 3rem;
-        height: 3rem;
+@media only screen and (max-width: 600px) {
+    .home-main-center{
+        max-width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .home-main-center h1 {
+        font-size: 9vw;
+    }
+    .home-main-center button{
+        font-size: 1rem;
+    }
+    .home-main-center h1 {
         font-size: 1.5rem;
-        text-align: center;
-        line-height: 3rem;
-        vertical-align: middle;
-    } */
+    }
+
+
 }

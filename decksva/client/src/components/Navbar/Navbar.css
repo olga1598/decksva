@@ -27,7 +27,9 @@
 @media screen and (max-width: 570) {
     .navbar-toggler{
         background-color: red;
-    
+    }
+    .navbar{
+        position: fixed;
     }
 }
 

@@ -5,7 +5,7 @@
 }
 
 h4{
-    color: rgb(82, 82, 219);
+    color: #007bff;
 }
 
 .company-content-first{
@@ -32,3 +32,19 @@ h4{
 .company-content-third h4{
     text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+    .company-content-first h1{
+        font-size: 1.8rem;
+    }
+    .company-content-second h4{
+        font-size: 1.2rem;
+    }
+    .company-content-second-col4{
+        margin-left: 0;
+    }
+    .company-content-third h4{
+        font-size: 1.2rem;
+    }
+}
+

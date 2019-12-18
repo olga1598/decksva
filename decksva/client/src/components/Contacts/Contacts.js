@@ -47,6 +47,10 @@ class Contacts extends Component {
           }
     }
 
+    componentDidMount() {
+        window.scrollTo(0, 0)
+      }
+
     changeHandler = e => {
         let value = e.target.value;
         const name= e.target.name;

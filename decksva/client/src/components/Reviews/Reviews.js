@@ -11,6 +11,10 @@ class Reviews extends Component {
         reviews
     }
 
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+
     render() {
         console.log(this.state.reviews);
 

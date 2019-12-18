@@ -5,6 +5,7 @@ import Home from "./components/Home/Home";
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
+import NewDesk from "./components/NewDesk/NewDesk";
 import Resurfacing from "./components/Resurfacing/Resurfacing";
 import Gazebos from "./components/Gazebos/Gazebos";
 import Contacts from './components/Contacts/Contacts';
@@ -15,10 +16,12 @@ import Process from "./components/Process/Process";
 import Warranty from "./components/Warranty/Warranty";
 import Company from "./components/Company/Company";
 import WhyUs from "./components/WhyUs/WhyUs";
+import Roofs from "./components/Roofs/Roofs";
 
 function App() {
   return (
     <BrowserRouter>
+    
       <section className="wrapper">
         <Header className="header" />
         <Navbar className="header" />
@@ -26,8 +29,10 @@ function App() {
           <Switch>
             <Route path="/" component={Home} exact />
             <Route path="/about" component={About} exact />
+            <Route path="/newdesk" component={NewDesk} exact />
             <Route path="/resurfacing" component={Resurfacing} exact />
             <Route path="/gazebos" component={Gazebos} exact />
+            <Route path="/louvered-roofs" component={Roofs} />
             <Route path="/contacts" component={Contacts} exact />
             <Route path="/reviews" component={Reviews} exact />
             <Route path="/process" component={Process} exact />
@@ -39,6 +44,7 @@ function App() {
         </section>
         <Footer className="footer" />
       </section>
+    
     </BrowserRouter>
   );
 }

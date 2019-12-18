@@ -1,0 +1,147 @@
+.resurfacing-content-first{
+    background-image: url("/picture3.jpg");
+    min-height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.resurfacing-main-top{
+    padding: 40px;
+}
+
+.resurfacing-main-bottom{
+    padding: 40px;
+}
+
+.resurfacing-main-center{
+    /* setting alpha = 0.3 */
+    background-color: rgb(100, 159, 236, 0.7);
+    /* opacity: 0.8; */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    text-align: center;
+    padding-top: 1rem;    
+    padding-bottom: 1rem;    
+}
+
+.resurfacing-main-center h1 {
+    font-weight: bold;
+    color: white;
+    font-size: 4vw;
+}
+
+/* .estimate-button{
+    background-color: #879c3a;
+    padding: 10px;
+    font-size: 2vw;
+    color: white;
+    margin: 5%;
+} */
+.resurfacing-content-second{
+    padding: 50px;
+    text-align: center;
+    letter-spacing: .05em;
+    line-height: 30px;
+}
+
+.resurfacing-content-second button{
+    letter-spacing: .1em;
+    padding: 10px 30px 10px 30px;
+    margin-top: 30px;
+}
+
+.resurfacing-content-third{
+    padding: 20px;
+    color: white;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.resurfacing-content-third img{
+    margin-top: 1rem;
+}
+
+.resurfacing-content-forth{
+    background-color: lightgray;
+    text-align: center;
+    letter-spacing: .05em;
+    line-height: 30px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.resurfacing-content-forth h4{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: black;
+}
+
+.resurfacing-content-forth span {
+    text-decoration: underline;
+}
+
+.resurfacing-content-forth button {
+    margin-bottom: 2rem;
+}
+
+.resurfacing-content-fifth {
+    letter-spacing: .05em;
+    line-height: 30px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+.resurfacing-content-fifth h1{
+    margin: 50px 10px 40px 10px;
+    text-align: center;
+}
+
+.resurfacing-content-fifth h3{
+    color: #879c3a;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.resurfacing-content-fifth-extra-block{
+    text-align: center;
+}
+
+.resurfacing-content-fifth button{
+    letter-spacing: .1em;
+    padding: 10px 30px 10px 30px;
+    margin: 30px 0px 80px 0px;
+}
+
+@media only screen and (max-width: 600px) {
+    .resurfacing-main-center{
+        max-width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .resurfacing-main-center h1 {
+        font-size: 9vw;
+    }
+    .resurfacing-main-center button{
+        font-size: 1rem;
+    }
+    .resurfacing-content-second h1{
+        font-size: 2rem;
+    }
+    .resurfacing-content-forth h1{
+        font-size: 2rem;
+    }
+    .resurfacing-content-fifth h1{
+        font-size: 2rem;
+    }
+    /* .resurfacing-content-second .row .col-sm-8{
+        width: 100%;
+    } */
+
+}
+

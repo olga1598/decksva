@@ -57,6 +57,9 @@
     .header-top-right {
       display: none;
     }  
+    /* .header-top-left{
+        position: fixed;
+    } */
     /* .logo{
         width: 100%;
         display: flex;

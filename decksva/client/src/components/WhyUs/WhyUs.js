@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { NavLink } from "react-router-dom";
 import "./WhyUs.css";
 
-const WhyUs = () => {
-    return (
+class WhyUs extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+
+    render() {
+
+        return (
         <div className="why-us">
             <div className="why-us-content-first">
                 <div className="row">
@@ -71,7 +77,8 @@ const WhyUs = () => {
                 </div>
             </div>
         </div>
-    )
+        )
+    }
 }
 
 export default WhyUs

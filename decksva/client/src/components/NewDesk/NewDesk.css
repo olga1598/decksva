@@ -1,6 +1,5 @@
-.gazebos-content-first{
-    /* padding: 40px 0px 40px 0px; */
-    background-image: url("/gazebos.jpg");
+.newdeck-content-first{
+    background-image: url("/picture3.jpg");
     min-height: 500px;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -9,15 +8,15 @@
     background-size: cover;
 }
 
-.gazebos-main-top{
+.newdeck-main-top{
     padding: 40px;
 }
 
-.gazebos-main-bottom{
+.newdeck-main-bottom{
     padding: 40px;
 }
 
-.gazebos-main-center{
+.newdeck-main-center{
     /* setting alpha = 0.3 */
     background-color: rgb(100, 159, 236, 0.7);
     /* opacity: 0.8; */
@@ -29,71 +28,41 @@
     padding-bottom: 1rem;    
 }
 
-.gazebos-main-center h1 {
+.newdeck-main-center h1 {
     font-weight: bold;
     color: white;
     font-size: 4vw;
 }
 
-.gazebos-content-second{
+.newdeck-content-second{
     padding: 50px;
     text-align: center;
     letter-spacing: .05em;
     line-height: 30px;
 }
 
-/* .gazebos-content-second h4{
+.newdeck-content-second h4{
     margin-top: 20px;
     margin-bottom: 20px;
-} */
+}
 
-.gazebos-content-second button{
+.newdeck-content-second button{
     letter-spacing: .1em;
     padding: 10px 30px 10px 30px;
     margin-top: 50px;
-}
-
-.gazebos-content-third{
-    padding-top: 70px;
-    background-color: lightgray;
-    text-align: center;
-    letter-spacing: .05em;
-    line-height: 30px;
-    padding-bottom: 70px;
-}
-
-.gazebos-content-third button{
-    letter-spacing: .1em;
-    padding: 10px 30px 10px 30px;
-    margin-top: 50px;
-
-}
-
-.gazebos-content-forth{
-    padding-top: 10px;
-    padding-bottom: 40px;
-}
-
-
-.gazebos-content-forth img {
-    width: 100%;
-    height: 100%;
-    padding-top: 30px;
 }
 
 @media only screen and (max-width: 600px) {
-    .gazebos-main-center{
+    .newdeck-main-center{
         max-width: 100%;
         margin-left: 10px;
         margin-right: 10px;
+        
     }
-    .gazebos-main-center h1 {
+    .newdeck-main-center h1 {
         font-size: 9vw;
     }
-    .gazebos-main-center button{
+    .newdeck-main-center button{
         font-size: 1rem;
     }
-
 }
-
-

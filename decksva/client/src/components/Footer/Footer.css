@@ -27,6 +27,12 @@
 
 @media screen and (max-width: 600px) {
     .footer-inner{
-        text-align: center;
+        font-size: 1rem;
+    }
+    .footer-logo{
+        width: 100%;
+    }
+    .footer-address{
+        margin-top: 1rem;
     }
 }

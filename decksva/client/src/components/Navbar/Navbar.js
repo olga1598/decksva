@@ -47,10 +47,16 @@ class Navbar extends Component {
                             </div>
                         </li>
                         <li className="nav-item">
+                            <NavLink to="/newdesk" className="nav-link">NEW DECKS</NavLink>
+                        </li>
+                        <li className="nav-item">
                             <NavLink to="/resurfacing" className="nav-link">RESURFACING</NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink to="/gazebos" className="nav-link">GAZEBOS & PAVILIONS</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink to="/louvered-roofs" className="nav-link">LOUVERED ROOFS</NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink to="/contacts" className="nav-link">CONTACTS</NavLink>

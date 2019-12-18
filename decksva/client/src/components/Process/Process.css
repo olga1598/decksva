@@ -52,3 +52,22 @@
     width: 30px;
     height: 30px;
 }
+
+@media only screen and (max-width: 600px) {
+    .process-content-first h1{
+        font-size: 1.8rem;
+    }
+    .process{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .company-content-second h4{
+        font-size: 1.2rem;
+    }
+    .company-content-second-col4{
+        margin-left: 0;
+    }
+    .company-content-third h4{
+        font-size: 1.2rem;
+    }
+}
