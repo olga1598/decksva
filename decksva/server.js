@@ -8,12 +8,9 @@ const generateEmailBody = require('./config/email');
 dotenv.config();
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-// sgMail.setApiKey(`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`);
 
 const app = express();
 
-// connect to DB, call it
-// connectDB();
 app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
 app.use(bodyParser.json({limit: '50mb'}));
 
