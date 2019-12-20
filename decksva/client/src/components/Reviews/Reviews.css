@@ -13,6 +13,12 @@
     margin-right: 15rem;
 }
 
+.review-content{
+    background-color: rgb(243, 239, 239);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
 .reviews-content-third-estimate-button{
     padding: 20px;
     text-align: center;
@@ -40,9 +46,17 @@
         margin-left: 1rem;
         margin-right: 1rem;
     }
-    #carouselExampleControls ol{
+    #reviews-content-second-inside{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    
+    }
+    .carousel-controls{
         display: none;
     }
+    /* #carouselExampleControls ol{
+        display: none;
+    } */
 }
 
 

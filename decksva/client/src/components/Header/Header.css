@@ -70,8 +70,10 @@
     .header-top-right {
       display: none;
     }  
-    /* .logo{
-        width: 100%;
+    /* .header-content{
+        position: relative;
+        float: left;
+        width: 50%;
     } */
 }
 

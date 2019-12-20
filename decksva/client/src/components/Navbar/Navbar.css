@@ -24,12 +24,19 @@
 .navbar{
     background-color: rgb(100, 159, 236);
 }
-@media screen and (max-width: 570) {
-    .navbar-toggler{
+
+@media screen and (max-width: 900) {
+    /* .navbar-toggler{
         background-color: red;
     }
     .navbar{
-        position: fixed;
+        background-color: red;
+
     }
+    .navbar button{
+        position: relative ;
+        float: right;
+        width: 50%;
+    } */
 }
 
