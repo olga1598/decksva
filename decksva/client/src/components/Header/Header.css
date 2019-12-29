@@ -36,17 +36,17 @@
     background-color: #879c3a;
     color: white;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     text-align: center;
-    line-height: 50px;
+    line-height: 30px;
     vertical-align: middle;
     /* padding: 10px; */
 }
 
 .social-links{
     margin: .618em .5em;
-    font-size: 25px;
+    font-size: 15px;
 }
 
 /* .social-links-shape-circle{
@@ -66,14 +66,17 @@
     } */
 }
 
-  @media screen and (max-width: 570) {
+  /* @media screen and (max-width: 900) {
     .header-top-right {
       display: none;
     }  
-    /* .header-content{
+
+    .header-content {
         position: relative;
+        display: flex;
         float: left;
         width: 50%;
-    } */
-}
+        background-color: #879c3a;
+    }
+} */
 

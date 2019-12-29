@@ -1,3 +1,8 @@
+.home-content{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .home-content-first{
     background-image: url("/picture1.jpg");
     min-height: 500px;
@@ -18,20 +23,28 @@
 
 .home-main-center{
     /* setting alpha = 0.3 */
-    background-color: rgb(100, 159, 236, 0.7);
-    /* opacity: 0.8; */
+    /* background-color: rgb(100, 159, 236, 0.7); */
+    /* background-color: #3096C8 !important; */
+    background-color: rgb(48, 150, 200, 0.7);
+    /* opacity: 0.7; */
     margin-left: auto;
     margin-right: auto;
-    max-width: 50%;
+    max-width: 45%;
     text-align: center;
-    padding-top: 1rem;    
+    padding-top: 3rem;    
     padding-bottom: 1rem;    
 }
 
 .home-main-center h1 {
-    font-weight: bold;
+    /* padding-top: 20px; */
+    /* font-weight: 500; */
+  
     color: white;
-    font-size: 3vw;
+    font-size: 3.5vw;
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: bold;
+    /* font-style: normal; */
+    /* letter-spacing: 0.05em; */
 }
 
 .estimate-button{
@@ -40,6 +53,7 @@
     font-size: 2vw;
     color: white;
     margin: 5%;
+    font-weight: bold;
 }
 
 .home-content-second{
@@ -68,6 +82,7 @@
 
 .home-content-third h4{
     font-size: 2vw;
+    color: white;
 }
 
 
@@ -145,20 +160,17 @@
     margin-top: 40px;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .home-main-center{
         max-width: 100%;
         margin-left: 10px;
         margin-right: 10px;
     }
-    .home-main-center h1 {
-        font-size: 9vw;
-    }
     .home-main-center button{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .home-main-center h1 {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
 
 

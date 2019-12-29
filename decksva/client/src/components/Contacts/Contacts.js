@@ -49,7 +49,11 @@ class Contacts extends Component {
 
     componentDidMount() {
         window.scrollTo(0, 0)
-      }
+    }
+
+    componentDidUpdate() {
+        window.scrollTo(0, 0)   
+    }
 
     changeHandler = e => {
         let value = e.target.value;
@@ -142,6 +146,35 @@ class Contacts extends Component {
         e.preventDefault();
         if(validateForm(this.state.errors)) {
             console.info('Valid Form')
+            
+        // Making phone number
+        let phone = [];
+        phone.push(this.state.phone1);
+        phone.push(this.state.phone2);
+        phone.push(this.state.phone3);
+        let phoneNum = phone.join("-");
+       
+        this.setState({formfilled: true});
+
+        axios.post("/contacts", {
+            fname: this.state.fname,
+            lname: this.state.lname,
+            phone: phoneNum,
+            email: this.state.email,
+            text: this.state.text,
+            // checkbox: this.state.fname,
+            address1: this.state.address1,
+            address2: this.state.address2,
+            city: this.state.city,
+            state: this.state.state,
+            zip: this.state.zip,
+            country: this.state.country
+        }).then(res => {
+            console.log("email is sent")
+            console.log(res.data);
+        })
+
+
           }else{
             console.error('Invalid Form')
           }
@@ -155,32 +188,6 @@ class Contacts extends Component {
         //     return false;
         // }
 
-        // Making phone number
-        let phone = [];
-        phone.push(this.state.phone1);
-        phone.push(this.state.phone2);
-        phone.push(this.state.phone3);
-        let phoneNum = phone.join("-");
-       
-        // this.setState({formfilled: true});
-
-        // axios.post("/contacts", {
-        //     fname: this.state.fname,
-        //     lname: this.state.lname,
-        //     phone: phoneNum,
-        //     email: this.state.email,
-        //     text: this.state.text,
-        //     // checkbox: this.state.fname,
-        //     address1: this.state.address1,
-        //     address2: this.state.address2,
-        //     city: this.state.city,
-        //     state: this.state.state,
-        //     zip: this.state.zip,
-        //     country: this.state.country
-        // }).then(res => {
-        //     console.log("email is sent")
-        //     console.log(res.data);
-        // })
     }
 
     render() {
@@ -203,11 +210,11 @@ class Contacts extends Component {
                     <div className="row">
                         <div className="col-sm-1"></div>
                         <div className="col-sm-6">
-                            <p><strong>Complete the form below to get Free Estimate</strong></p>
+                            <p className="to-complite-the-form"><strong>Complete the form below to get Free Estimate</strong></p>
 
                         {this.state.formfilled ? 
                             
-                            <div>
+                            <div className="to-complite-the-form">
                                 <p>Thank you for your interest in our services. We will get back to you as soon as possible.</p>
                                 <p>- Your VA DECK BUILDERS Team</p>
                             </div>

@@ -1,9 +1,20 @@
 .why-us-content-first{
     margin: 50px 40px 90px 40px;
+    display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .why-us-image{
-    width: 100%;
+  width: 100%;
+  /* padding: 16px; */
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  flex: 1;
+  flex-direction: column;
+  flex-basis: 100%;
 }
 
 .why-us-content-second ul{
@@ -18,4 +29,19 @@
 .why-us-content-third button{
     margin: 30px 0px 100px 0px;
     letter-spacing: .1em;
+}
+
+@media screen and (max-width: 900px) {
+    .why-us-image{
+        margin-top: 10px;
+    }
+    .why-us-content-first{
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0px 20px 0px 20px;    
+    }
+    .why-us-content-second{
+        padding: 20px;
+    }
+
 }

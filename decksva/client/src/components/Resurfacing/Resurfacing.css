@@ -1,3 +1,8 @@
+.resurfacing-inside{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .resurfacing-content-first{
     background-image: url("/picture3.jpg");
     min-height: 500px;
@@ -18,20 +23,39 @@
 
 .resurfacing-main-center{
     /* setting alpha = 0.3 */
-    background-color: rgb(100, 159, 236, 0.7);
-    /* opacity: 0.8; */
+    background-color: rgb(48, 150, 200, 0.7);
+    /* opacity: 0.7; */
     margin-left: auto;
     margin-right: auto;
     max-width: 50%;
     text-align: center;
-    padding-top: 1rem;    
-    padding-bottom: 1rem;    
+    padding-top: 3rem;    
+    padding-bottom: 1rem;  
+    /* font-family: futura-pt, sans-serif;
+font-style: normal;
+font-weight: 400;
+font-style: normal;
+font-size: 19px;
+letter-spacing: .02em;
+line-height: 1.5em; */
+    /* font-family: futura-pt;
+font-weight: 400;
+font-style: normal;
+font-size: 19px;
+letter-spacing: .02em;
+line-height: 1.5em;
+text-transform: none;   */
 }
 
 .resurfacing-main-center h1 {
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-weight: 500;
     color: white;
-    font-size: 4vw;
+    font-size: 3.5vw;
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0.05em;
 }
 
 /* .estimate-button{

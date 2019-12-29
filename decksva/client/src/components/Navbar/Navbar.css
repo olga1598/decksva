@@ -5,7 +5,7 @@
 
 
 .navbar ul{
-      text-align: center;
+      /* text-align: center; */
       justify-content: center;
       flex: 1;
       font-weight: bold;
@@ -13,30 +13,57 @@
 }
 
 .nav-item {
-    margin: 0 20px 0 20px;
-    /* font-family: futura-pt; */
-    /* font-style: normal; */
+    /* margin: 0 10px 0 10px; */
+/* font-size: 17px; */
+
+/* letter-spacing: .05em; */
+white-space: nowrap;
+/* font-weight: bold; */
+line-height: 1em;
+font-family: 'Didact Gothic', sans-serif;
+/* font-family: 'Open Sans Condensed', sans-serif; */
+/* font-style: normal; */
     /* font-size: 19px; */
     letter-spacing: .04em;
-    /* line-height: 1.5em; */
+    line-height: 1.5em;
 }
-
+/* #3096C8 */
 .navbar{
-    background-color: rgb(100, 159, 236);
+    /* padding-left: 200px; */
+    /* padding-right: 200px; */
+    background-color: #3096C8 !important;
 }
 
-@media screen and (max-width: 900) {
-    /* .navbar-toggler{
-        background-color: red;
+.navbar li {
+        font-size: 17px;
+
+}
+@media screen and (max-width: 600px) {
+    .navbar button{
+        position: relative ;
+        float: right;
+        
     }
     .navbar{
-        background-color: red;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* @media screen and (max-width: 700) {
+    .navbar-toggler{
+        background-color: red !important;
+    }
+    .navbar{
+        background-color: yellow !important;
+        
+        flex-direction: row;
 
     }
     .navbar button{
         position: relative ;
         float: right;
         width: 50%;
-    } */
-}
+    }
+} */
 

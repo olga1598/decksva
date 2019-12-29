@@ -13,39 +13,6 @@ class Reviews extends Component {
 
     componentDidMount() {
         window.scrollTo(0, 0);
-        // let m = document.getElementsByClassName('reviews-content-second')[0];
-        // m.slick({
-        //     dots: true,
-        //     infinite: false,
-        //     speed: 300,
-        //     slidesToShow: 4,
-        //     slidesToScroll: 4,
-        //     responsive: [
-        //       {
-        //         breakpoint: 1024,
-        //         settings: {
-        //           slidesToShow: 3,
-        //           slidesToScroll: 3,
-        //           infinite: true,
-        //           dots: true
-        //         }
-        //       },
-        //       {
-        //         breakpoint: 600,
-        //         settings: {
-        //           slidesToShow: 2,
-        //           slidesToScroll: 2
-        //         }
-        //       },
-        //       {
-        //         breakpoint: 480,
-        //         settings: {
-        //           slidesToShow: 1,
-        //           slidesToScroll: 1
-        //         }
-        //       }
-        //     ]
-        //   });
     }
 
     render() {
@@ -107,19 +74,25 @@ class Reviews extends Component {
                                 <div className="carousel-item">
                                     <div className="row" id="reviews-content-second-inside">
                                         <div className="col-sm-4">
-                                            <hr />
-                                            <p>{this.state.reviews[3].text}</p>
-                                            <p><strong>-- {this.state.reviews[3].name}</strong></p>
+                                            <div className="review-content">
+                                                <hr />
+                                                <p>{this.state.reviews[3].text}</p>
+                                                <p><strong>-- {this.state.reviews[3].name}</strong></p>
+                                            </div>
                                         </div>
                                         <div className="col-sm-4">
-                                            <hr />
-                                            <p>{this.state.reviews[4].text}</p>
-                                            <p><strong>-- {this.state.reviews[4].name}</strong></p>
+                                            <div className="review-content">
+                                                <hr />
+                                                <p>{this.state.reviews[4].text}</p>
+                                                <p><strong>-- {this.state.reviews[4].name}</strong></p>
+                                            </div>
                                         </div>
                                         <div className="col-sm-4">
-                                            <hr />
-                                            <p>{this.state.reviews[5].text}</p>
-                                            <p><strong>-- {this.state.reviews[5].name}</strong></p>
+                                            <div className="review-content">
+                                                <hr />
+                                                <p>{this.state.reviews[5].text}</p>
+                                                <p><strong>-- {this.state.reviews[5].name}</strong></p>
+                                            </div>
                                         </div>
                                     </div>
     
@@ -128,39 +101,25 @@ class Reviews extends Component {
                                 <div className="carousel-item">
                                     <div className="row" id="reviews-content-second-inside">
                                         <div className="col-sm-4">
-                                            <hr />
-                                            <p>{this.state.reviews[6].text}</p>
-                                            <p><strong>-- {this.state.reviews[6].name}</strong></p>
+                                            <div className="review-content">
+                                                <hr />
+                                                <p>{this.state.reviews[6].text}</p>
+                                                <p><strong>-- {this.state.reviews[6].name}</strong></p>
+                                            </div>
                                         </div>
                                         <div className="col-sm-4">
-                                            <hr />
-                                            <p>{this.state.reviews[7].text}</p>
-                                            <p><strong>-- {this.state.reviews[7].name}</strong></p>
+                                            <div className="review-content">
+                                                <hr />
+                                                <p>{this.state.reviews[7].text}</p>
+                                                <p><strong>-- {this.state.reviews[7].name}</strong></p>
+                                            </div>
                                         </div>
                                         <div className="col-sm-4">
-                                            <hr />
-                                            <p>{this.state.reviews[8].text}</p>
-                                            <p><strong>-- {this.state.reviews[8].name}</strong></p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="carousel-item">
-                                    <div className="row" id="reviews-content-second-inside">
-                                        <div className="col-sm-4">
-                                            <hr />
-                                            <p>{this.state.reviews[9].text}</p>
-                                            <p><strong>-- {this.state.reviews[9].name}</strong></p>
-                                        </div>
-                                        <div className="col-sm-4">
-                                            <hr />
-                                            <p>{this.state.reviews[10].text}</p>
-                                            <p><strong>-- {this.state.reviews[10].name}</strong></p>
-                                        </div>
-                                        <div className="col-sm-4">
-                                            <hr />
-                                            <p>{this.state.reviews[11].text}</p>
-                                            <p><strong>-- {this.state.reviews[11].name}</strong></p>
+                                            <div className="review-content">
+                                                <hr />
+                                                <p>{this.state.reviews[8].text}</p>
+                                                <p><strong>-- {this.state.reviews[8].name}</strong></p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -168,19 +127,51 @@ class Reviews extends Component {
                                 <div className="carousel-item">
                                     <div className="row" id="reviews-content-second-inside">
                                         <div className="col-sm-4">
-                                            <hr />
-                                            <p>{this.state.reviews[12].text}</p>
-                                            <p><strong>-- {this.state.reviews[12].name}</strong></p>
+                                            <div className="review-content">
+                                                <hr />
+                                                <p>{this.state.reviews[9].text}</p>
+                                                <p><strong>-- {this.state.reviews[9].name}</strong></p>
+                                            </div>
                                         </div>
                                         <div className="col-sm-4">
-                                            <hr />
-                                            <p>{this.state.reviews[13].text}</p>
-                                            <p><strong>-- {this.state.reviews[13].name}</strong></p>
+                                            <div className="review-content">
+                                                <hr />
+                                                <p>{this.state.reviews[10].text}</p>
+                                                <p><strong>-- {this.state.reviews[10].name}</strong></p>
+                                            </div>
                                         </div>
                                         <div className="col-sm-4">
-                                            <hr />
-                                            <p>{this.state.reviews[14].text}</p>
-                                            <p><strong>-- {this.state.reviews[14].name}</strong></p>
+                                            <div className="review-content">
+                                                <hr />
+                                                <p>{this.state.reviews[11].text}</p>
+                                                <p><strong>-- {this.state.reviews[11].name}</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="carousel-item">
+                                    <div className="row" id="reviews-content-second-inside">
+                                        <div className="col-sm-4">
+                                            <div className="review-content">
+                                                <hr />
+                                                <p>{this.state.reviews[12].text}</p>
+                                                <p><strong>-- {this.state.reviews[12].name}</strong></p>
+                                            </div>
+                                        </div>
+                                        <div className="col-sm-4">
+                                            <div className="review-content">
+                                                <hr />
+                                                <p>{this.state.reviews[13].text}</p>
+                                                <p><strong>-- {this.state.reviews[13].name}</strong></p>
+                                            </div>
+                                        </div>
+                                        <div className="col-sm-4">
+                                            <div className="review-content">
+                                                <hr />
+                                                <p>{this.state.reviews[14].text}</p>
+                                                <p><strong>-- {this.state.reviews[14].name}</strong></p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
