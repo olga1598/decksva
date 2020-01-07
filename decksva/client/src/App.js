@@ -17,13 +17,13 @@ import Warranty from "./components/Warranty/Warranty";
 import Company from "./components/Company/Company";
 import WhyUs from "./components/WhyUs/WhyUs";
 import Roofs from "./components/Roofs/Roofs";
+// <Header className="header" />
 
 function App() {
   return (
     <BrowserRouter>
     
       <section className="wrapper">
-        <Header className="header" />
         <Navbar className="header" />
         <section className="content">
           <Switch>

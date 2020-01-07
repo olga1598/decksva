@@ -5,8 +5,7 @@
 
 
 .navbar ul{
-      /* text-align: center; */
-      justify-content: center;
+      /* justify-content: center; */
       flex: 1;
       font-weight: bold;
       padding: 10px 0 10px 0;
@@ -17,10 +16,10 @@
 /* font-size: 17px; */
 
 /* letter-spacing: .05em; */
-white-space: nowrap;
+    white-space: nowrap;
 /* font-weight: bold; */
-line-height: 1em;
-font-family: 'Didact Gothic', sans-serif;
+    line-height: 1em;
+    font-family: 'Didact Gothic', sans-serif;
 /* font-family: 'Open Sans Condensed', sans-serif; */
 /* font-style: normal; */
     /* font-size: 19px; */
@@ -29,41 +28,43 @@ font-family: 'Didact Gothic', sans-serif;
 }
 /* #3096C8 */
 .navbar{
-    /* padding-left: 200px; */
-    /* padding-right: 200px; */
+    padding-left: 200px;
+    padding-right: 200px;
     background-color: #3096C8 !important;
 }
 
 .navbar li {
-        font-size: 17px;
+    font-size: 17px;
 
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 580px) {
     .navbar button{
-        position: relative ;
-        float: right;
-        
+        background-color: #3096C8; 
     }
     .navbar{
         margin-left: 10px;
         margin-right: 10px;
+        background-color: transparent !important;
+    }
+    .header-navbar{
+        display: flex;
+        position: fixed;
+        background-color: white;
+        z-index: 1000;
+    }
+    .navbar ul {
+        background-color: #3096C8;
+        padding: 20px;
+        text-align: center;
     }
 }
 
-/* @media screen and (max-width: 700) {
-    .navbar-toggler{
-        background-color: red !important;
-    }
+@media screen and (max-width: 1000px) {
     .navbar{
-        background-color: yellow !important;
-        
-        flex-direction: row;
-
+        /* background-color: yellow !important; */
+        display: flex;
+        /* padding-left: 0;
+        padding-right:0; */
     }
-    .navbar button{
-        position: relative ;
-        float: right;
-        width: 50%;
-    }
-} */
+}
 
