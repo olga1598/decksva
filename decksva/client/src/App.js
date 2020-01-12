@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./components/Home/Home";
-import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
 import NewDesk from "./components/NewDesk/NewDesk";
@@ -17,12 +16,11 @@ import Warranty from "./components/Warranty/Warranty";
 import Company from "./components/Company/Company";
 import WhyUs from "./components/WhyUs/WhyUs";
 import Roofs from "./components/Roofs/Roofs";
-// <Header className="header" />
 
-function App() {
+function App () {
   return (
     <BrowserRouter>
-    
+
       <section className="wrapper">
         <Navbar className="header" />
         <section className="content">
@@ -44,7 +42,7 @@ function App() {
         </section>
         <Footer className="footer" />
       </section>
-    
+
     </BrowserRouter>
   );
 }

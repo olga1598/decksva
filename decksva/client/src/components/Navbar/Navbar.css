@@ -1,52 +1,93 @@
-/* #navbarToggler{
-    background-color: rgb(100, 159, 236);
-    font-weight: 100;
-} */
-
-
-.navbar ul{
-      /* justify-content: center; */
-      flex: 1;
-      font-weight: bold;
-      padding: 10px 0 10px 0;
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
 }
 
-.nav-item {
-    /* margin: 0 10px 0 10px; */
-/* font-size: 17px; */
-
-/* letter-spacing: .05em; */
-    white-space: nowrap;
-/* font-weight: bold; */
-    line-height: 1em;
-    font-family: 'Didact Gothic', sans-serif;
-/* font-family: 'Open Sans Condensed', sans-serif; */
-/* font-style: normal; */
-    /* font-size: 19px; */
-    letter-spacing: .04em;
-    line-height: 1.5em;
+.header .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
 }
-/* #3096C8 */
-.navbar{
+
+.header .content .left {
+    flex: 0 0 300px;
+}
+
+.header .content .right {
+    flex: 1 0;
+    text-align: right;
+}
+
+.header .content .left img {
+    max-width: 100%;
+}
+
+.right a, .right span {
+    display: inline-block;
+    text-align: center;
+}
+
+.header-phone-number {
+    color: #333;
+    letter-spacing: .05em;
+    padding: 12px 16px;
+    margin: .618em .5em;
+    background-color: #dce3e7;
+}
+
+.fa-facebook-f, .fa-houzz, .fa-yelp {
+    background-color: #879c3a;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+.social-links {
+    margin: .618em .5em;
+    font-size: 15px;
+}
+
+.navbar {
     padding-left: 200px;
     padding-right: 200px;
     background-color: #3096C8 !important;
 }
 
+.navbar .nav-item {
+    white-space: nowrap;
+    line-height: 1em;
+    font-family: 'Didact Gothic', sans-serif;
+    letter-spacing: .04em;
+    line-height: 1.5em;
+}
+
+.navbar ul {
+    flex: 1;
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+}
+
 .navbar li {
     font-size: 17px;
-
 }
+
 @media screen and (max-width: 580px) {
-    .navbar button{
+    .navbar button {
         background-color: #3096C8; 
     }
-    .navbar{
+    .navbar {
         margin-left: 10px;
         margin-right: 10px;
         background-color: transparent !important;
     }
-    .header-navbar{
+    .header-navbar {
         display: flex;
         position: fixed;
         background-color: white;
@@ -60,11 +101,9 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .navbar{
-        /* background-color: yellow !important; */
+    .navbar {
         display: flex;
         padding-left: 0;
         padding-right:0;
     }
 }
-
