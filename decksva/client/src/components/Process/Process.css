@@ -54,8 +54,12 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .process{
+        margin-top: 0px;
+    }
     .process-content-first h1{
         font-size: 1.8rem;
+        margin-top: 100px;
     }
     .process{
         margin-left: 1rem;

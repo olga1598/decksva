@@ -34,6 +34,9 @@ h4{
 }
 
 @media only screen and (max-width: 600px) {
+    .company-content-first{
+        margin-top: 0px;
+    }
     .company-content-first h1{
         font-size: 1.8rem;
     }
