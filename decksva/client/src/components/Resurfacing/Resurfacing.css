@@ -163,9 +163,9 @@ text-transform: none;   */
     .resurfacing-content-fifth h1{
         font-size: 2rem;
     }
-    /* .resurfacing-content-second .row .col-sm-8{
-        width: 100%;
-    } */
+    .resurfacing-content-first{
+        padding-top: 50px;
+    }
 
 }
 

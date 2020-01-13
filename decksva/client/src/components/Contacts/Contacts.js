@@ -24,7 +24,7 @@ class Contacts extends Component {
         phone3: "",
         email: "",
         text: "",
-        checkbox: "",
+        checkbox: [],
         address1: "",
         address2: "",
         city: "",
@@ -32,6 +32,7 @@ class Contacts extends Component {
         zip: "",
         country: "",
         formfilled: false,
+        workOptions: ["New Deck Installation", " Deck Resurfacing", "Gazebos & Pavilions", "Louvered Roofs"],
         errors: {
             fname: "",
             lname: "",
@@ -118,16 +119,26 @@ class Contacts extends Component {
                             : "";
                 break;
             case "state":
-                errors.state =
-                        value.length < 1
-                            ? "Please enter a valid state"
-                            : "";
+                if(!isNaN(value)){
+                    errors.state = "Please enter valid state"
+                } else if (value.length < 1){
+                    errors.state = "Please enter valid state"
+                } else {
+                    errors.state = ""
+                }
+                // errors.state =
+                //         value.length < 1
+                //             ? "Please enter a valid state"
+                //             : "";
                 break;
             case "zip":
-                errors.zip =
-                        value.length < 1
-                            ? "Please enter a valid zip"
-                            : "";
+                if (isNaN(value)) {
+                    errors.zip = "Zip code is not valid. It must contain only digits"
+                } else if (value.length !== 5){    
+                    errors.zip = "Zip code should be 5 characters long"
+                } else { 
+                    errors.zip = ""
+                }
                 break;
             case "country":
                 errors.country =
@@ -142,9 +153,35 @@ class Contacts extends Component {
         }, ()=> {console.log(errors)})
     }
 
+    handleCheckBox = e => {
+
+        const newSelection = e.target.value;
+        console.log(newSelection);
+        let newSelectionArray;
+        if(this.state.checkbox.indexOf(newSelection) > -1) {
+            console.log(this.checkbox)
+            newSelectionArray = this.state.checkbox.filter(s => s !== newSelection)
+            console.log(newSelectionArray)
+        } else {
+            newSelectionArray = [...this.state.checkbox, newSelection];
+            console.log(newSelectionArray)
+        }
+
+        this.setState({ checkbox : newSelectionArray})
+ console.log(this.checkbox)
+    }
+
     submitHandler = e => {
         e.preventDefault();
-        if(validateForm(this.state.errors)) {
+        console.log(this.checkbox);
+        console.log(this.lname);
+        console.log(this.fname);
+        // if(!this.state["name"]){
+        //     this.state.errors["name"] = "Cannot be empty";
+        // }
+        if(this.state.fname === "" || this.state.lname === "") {
+            console.log("invalid form");
+        }else if(validateForm(this.state.errors)) {
             console.info('Valid Form')
             
         // Making phone number
@@ -162,7 +199,7 @@ class Contacts extends Component {
             phone: phoneNum,
             email: this.state.email,
             text: this.state.text,
-            // checkbox: this.state.fname,
+            checkbox: this.checkbox,
             address1: this.state.address1,
             address2: this.state.address2,
             city: this.state.city,
@@ -192,6 +229,15 @@ class Contacts extends Component {
 
     render() {
     const errors = this.state.errors;
+    const isEnabled = this.state.fname.length > 0 && this.state.lname.length > 0 
+                    && this.state.email.length > 0 
+                    && this.state.address1.length > 0
+                    && this.state.phone1.length > 0
+                    && this.state.phone2.length > 0
+                    && this.state.phone3.length > 0
+                    && this.state.city.length > 0
+                    && this.state.state.length > 0
+                    && this.state.zip.length > 0;
     return (
         <div className="contacts">
             <div className="row">
@@ -337,7 +383,9 @@ class Contacts extends Component {
                                             <label>
                                                 <input type="checkbox" 
                                                        name="checkbox" 
-                                                       value="new desk installation" />
+                                                       value="new desk installation" 
+                                                       onChange={this.handleCheckBox}
+                                                       />
                                                 New Desk Installation
                                             </label>
                                         </div>
@@ -345,21 +393,26 @@ class Contacts extends Component {
                                             <label>
                                                 <input type="checkbox" 
                                                        name="checkbox" 
-                                                       value="desk resurfacing" />
+                                                       value="desk resurfacing"
+                                                       onChange={this.handleCheckBox} />
                                                 Deck Resurfacing
                                             </label>
                                         </div>
                                         <div className="option">
                                             <label>
                                                 <input type="checkbox" 
-                                                       name="checkbox" />
+                                                       name="checkbox"
+                                                       value="gazebos and pavilions" 
+                                                       onChange={this.handleCheckBox}/>
                                                 Gazebos & Pavilions
                                             </label>
                                         </div>
                                         <div className="option">
                                             <label>
                                                 <input type="checkbox" 
-                                                       name="checkbox" />
+                                                       name="checkbox"
+                                                       value="louvered roofs"
+                                                       onChange={this.handleCheckBox} />
                                                 Louvered Roofs
                                             </label>
                                         </div>
@@ -458,7 +511,7 @@ class Contacts extends Component {
                                     </fieldset>
                                 </div>
                                 <div className="form-button-wrapper">
-                                    <button type="submit" id="form-submit-botton" className="btn btn-primary">SUBMIT</button>
+                                    <button type="submit" disabled={!isEnabled} id="form-submit-botton" className="btn btn-primary">SUBMIT</button>
                                 </div>
                             </form>
                             </div> 

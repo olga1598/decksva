@@ -76,12 +76,14 @@
         max-width: 100%;
         margin-left: 10px;
         margin-right: 10px;
-        
     }
     .newdeck-main-center h1 {
         font-size: 9vw;
     }
     .newdeck-main-center button{
         font-size: 1rem;
+    }
+    .newdeck-content-first{
+        padding-top: 50px;
     }
 }

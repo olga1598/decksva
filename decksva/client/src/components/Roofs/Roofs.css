@@ -133,5 +133,7 @@
     .roofs-main-center button{
         font-size: 1.5rem;
     }
-
+    .roofs-content-first{
+        padding-top: 50px;
+    }
 }

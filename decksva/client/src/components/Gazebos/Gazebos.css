@@ -109,7 +109,9 @@
     .gazebos-main-center button{
         font-size: 1rem;
     }
-
+    .gazebos-content-first{
+        padding-top: 50px;
+    }
 }
 
 
