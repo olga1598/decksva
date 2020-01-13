@@ -46,6 +46,15 @@ function generateEmailBody(data) {
                     <td align="center">${data.text}</td>
                     </tr>
                 </table>
+                <table style="width:100%">
+                    <tr>
+                    <th><strong>Works:</strong></th>
+                    </tr>
+                    <tr>
+                    <td align="center">${data.checkbox}</td>
+                    </tr>
+                </table>
+
                 </div>`
     return emailText;
 }

@@ -168,17 +168,11 @@ class Contacts extends Component {
         }
 
         this.setState({ checkbox : newSelectionArray})
- console.log(this.checkbox)
+ console.log(this.state.checkbox)
     }
 
     submitHandler = e => {
         e.preventDefault();
-        console.log(this.checkbox);
-        console.log(this.lname);
-        console.log(this.fname);
-        // if(!this.state["name"]){
-        //     this.state.errors["name"] = "Cannot be empty";
-        // }
         if(this.state.fname === "" || this.state.lname === "") {
             console.log("invalid form");
         }else if(validateForm(this.state.errors)) {
@@ -199,7 +193,7 @@ class Contacts extends Component {
             phone: phoneNum,
             email: this.state.email,
             text: this.state.text,
-            checkbox: this.checkbox,
+            checkbox: this.state.checkbox,
             address1: this.state.address1,
             address2: this.state.address2,
             city: this.state.city,
